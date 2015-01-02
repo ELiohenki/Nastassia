@@ -3,3 +3,7 @@ dist
 .tmp
 .sass-cache
 bower_components
+Nastassia/bin/
+Nastassia/obj/
+Nastassia.Tests/bin/
+Nastassia.Tests/bin/
