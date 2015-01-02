@@ -5,5 +5,6 @@ dist
 bower_components
 Nastassia/bin/
 Nastassia/obj/
+packages/
 Nastassia.Tests/bin/
-Nastassia.Tests/bin/
+Nastassia.Tests/obj/
