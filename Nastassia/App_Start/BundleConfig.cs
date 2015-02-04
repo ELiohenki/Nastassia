@@ -38,6 +38,10 @@ namespace Nastassia
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/NastassiaApp")
+                .IncludeDirectory("~/Scripts/Controllers","*.js")
+                .Include("~/Scripts/NastassiaApp.js"));
         }
     }
 }
