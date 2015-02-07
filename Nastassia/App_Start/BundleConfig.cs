@@ -41,6 +41,7 @@ namespace Nastassia
 
             bundles.Add(new ScriptBundle("~/bundles/NastassiaApp")
                 .IncludeDirectory("~/Scripts/Controllers","*.js")
+                .IncludeDirectory("~/Scripts/Factories", "*.js")
                 .Include("~/Scripts/NastassiaApp.js"));
         }
     }
