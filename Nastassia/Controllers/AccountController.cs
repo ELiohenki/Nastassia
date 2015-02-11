@@ -1,6 +1,7 @@
 ﻿using Nastassia.Model;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace Nastassia.Controllers
 {
@@ -28,6 +29,9 @@ namespace Nastassia.Controllers
             switch (result)
             {
                 case true:
+                    FormsAuthentication.SetAuthCookie("asd@asd.asd", false);
+                    //Response.Redirect("../home/index"); 
+                    //FormsAuthentication.RedirectFromLoginPage("asd@asd.asd", false);
                     return true;
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
