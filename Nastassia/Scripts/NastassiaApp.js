@@ -2,8 +2,11 @@
 
 NastassiaApp.controller('MainPageController', MainPageController);
 NastassiaApp.controller('LoginController', LoginController);
+NastassiaApp.controller('RegisterController', RegisterController);
 
 NastassiaApp.factory('AuthHttpResponseInterceptor', AuthHttpResponseInterceptor);
+NastassiaApp.factory('LoginFactory', LoginFactory);
+NastassiaApp.factory('RegistrationFactory', RegistrationFactory);
 
 var configFunction = function ($routeProvider, $httpProvider) {
     $routeProvider.
@@ -19,6 +22,10 @@ var configFunction = function ($routeProvider, $httpProvider) {
         .when('/login', {
             templateUrl: 'account/Login',
             controller: LoginController
+        })
+        .when('/register', {
+            templateUrl: '/Account/Register',
+            controller: RegisterController
         });
 
     $httpProvider.interceptors.push('AuthHttpResponseInterceptor');
