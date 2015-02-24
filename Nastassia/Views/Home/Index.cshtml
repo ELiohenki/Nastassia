@@ -2,8 +2,35 @@
 <html ng-app="NastassiaApp" ng-controller="MainPageController">
 <head>
     <title ng-bind="models.helloAngular"></title>
+    <link rel="stylesheet" id="site-css" href="Content/Site.css" type="text/css" media="all">
 </head>
 <body>
+    <header id="header">
+        <div class="header-inner wrapper clearfix">
+
+            <div id="logo" class="left-float">
+                <a id="defaut-logo" class="logotype" href="index.html" title="Maxlabs">
+                    <img src="files/uploads/xone-logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="menu right-float clearfix">
+                <nav id="main-nav">
+                    <ul>
+                        <li class="current-menu-item"><a href="#home" class="scroll-to" title="Home">Home</a></li>
+                        <li><a href="#about" class="scroll-to" title="About">About</a></li>
+                        <li><a href="#service" class="scroll-to" title="Services">Services</a></li>
+                        <li><a href="#portfolio" class="scroll-to" title="Portfolio">Portfolio</a></li>
+                        <li><a href="http://blog.mxlbs.de" title="Blog">Blog</a></li>
+                        <li><a href="#contact" class="scroll-to" title="Contact">Contact</a></li>
+                        <li><a href="#contact" class="hire scroll-to" title="Hire">HIRE</a></li>
+                    </ul>
+                </nav>
+                <a class="open-responsive-nav" href=""><span></span></a>
+            </div>
+
+        </div> <!-- END .header-inner -->
+    </header>
     <input type="text" ng-model="models.helloAngular" />
     <h1>{{models.helloAngular}}</h1>
 
