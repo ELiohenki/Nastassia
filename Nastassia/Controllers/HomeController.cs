@@ -12,5 +12,9 @@ namespace Nastassia.Controllers
         {
             return View();
         }
+        public ActionResult TestMixItOut()
+        {
+            return View();
+        }
     }
 }
